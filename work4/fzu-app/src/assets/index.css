@@ -1,0 +1,352 @@
+.page {
+  background-color: rgba(239, 249, 255, 1);
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+
+.group_1 {
+  width: 1920px;
+  height: 1080px;
+  background: url(https://lanhu-oss.lanhuapp.com/FigmaDDSSlicePNG3c0772582b75470db8dd671f2cd58755.png)
+    100% no-repeat;
+  background-size: 100% 100%;
+}
+
+.block_1 {
+  box-shadow: 0px 5px 26px 3px rgba(213, 68, 71, 0.21);
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+  width: 1920px;
+  height: 92px;
+  margin-top: -1px;
+}
+
+.text_1 {
+  width: 96px;
+  height: 31px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: KingHwa_OldSong-Regular;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 24px;
+  margin: 34px 0 0 161px;
+}
+
+.text_2 {
+  width: 144px;
+  height: 25px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 0.47);
+  font-size: 18px;
+  font-family: PingFang SC-Regular;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 18px;
+  margin: 33px 0 0 38px;
+}
+
+.text_3 {
+  width: 48px;
+  height: 32px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: OPPOSans-Bold;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 24px;
+  margin: 28px 0 0 258px;
+}
+
+.text_4 {
+  width: 80px;
+  height: 32px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: OPPOSans-Bold;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 24px;
+  margin: 28px 0 0 60px;
+}
+
+.text_5 {
+  width: 72px;
+  height: 32px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: OPPOSans-Bold;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 24px;
+  margin: 28px 0 0 60px;
+}
+
+.text_6 {
+  width: 72px;
+  height: 32px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: OPPOSans-Bold;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 24px;
+  margin: 29px 0 0 60px;
+}
+
+.text_7 {
+  width: 96px;
+  height: 32px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: OPPOSans-Bold;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 24px;
+  margin: 28px 0 0 60px;
+}
+
+.text_8 {
+  width: 96px;
+  height: 32px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: OPPOSans-Bold;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 24px;
+  margin: 30px 0 0 60px;
+}
+
+.box_1 {
+  background-color: rgba(94, 33, 33, 1);
+  height: 40px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  width: 34px;
+  margin: 26px 0 0 69px;
+}
+
+.group_2 {
+  background-color: rgba(94, 33, 33, 1);
+  width: 34px;
+  height: 40px;
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.box_2 {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  margin: 10px 0 0 20px;
+}
+
+.box_3 {
+  background-color: rgba(255, 255, 255, 1);
+  width: 4px;
+  height: 12px;
+  margin: 2px 0 12px 21px;
+}
+
+.image_1 {
+  width: 50px;
+  height: 50px;
+  margin: 20px 0 0 39px;
+}
+
+.box_4 {
+  background-color: rgba(163, 0, 0, 1);
+  width: 136px;
+  height: 50px;
+  margin: 22px 68px 0 63px;
+}
+
+.label_1 {
+  width: 30px;
+  height: 30px;
+  margin: 8px 0 0 4px;
+}
+
+.text_9 {
+  width: 90px;
+  height: 36px;
+  overflow-wrap: break-word;
+  color: rgba(224, 224, 224, 1);
+  font-size: 30px;
+  font-family: SJjinsongjianfan-Regular;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 30px;
+  margin: 4px 7px 0 5px;
+}
+
+.box_5 {
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 385px;
+  position: absolute;
+  left: 276px;
+  top: 20px;
+}
+
+.box_6 {
+  background-color: rgba(0, 0, 0, 1);
+  width: 20px;
+  height: 20px;
+  margin: 15px 0 0 347px;
+}
+
+.box_7 {
+  position: absolute;
+  left: 68px;
+  top: 14px;
+  width: 94px;
+  height: 64px;
+}
+
+.block_2 {
+  width: 1920px;
+  height: 990px;
+  margin-bottom: 1px;
+}
+
+.block_3 {
+  width: 1136px;
+  height: 958px;
+  margin: 31px 0 0 418px;
+}
+
+.image_2 {
+  width: 70px;
+  height: 328px;
+}
+
+.box_8 {
+  box-shadow: 0px 7px 23px 0px rgba(131, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.88);
+  position: relative;
+  width: 1011px;
+  height: 958px;
+}
+
+.text_10 {
+  width: 395px;
+  height: 34px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 0.61);
+  font-size: 20px;
+  font-family: Inter-Regular;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 20px;
+  margin: 120px 0 0 54px;
+}
+
+.block_4 {
+  height: 958px;
+  background: url(https://lanhu-oss.lanhuapp.com/FigmaDDSSlicePNGfbd71356cdd91d0757692d7a7f756d7e.png)
+    100% no-repeat;
+  background-size: 100% 100%;
+  width: 1011px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.text-wrapper_1 {
+  width: 943px;
+  height: 83px;
+  margin: 23px 0 0 53px;
+}
+
+.text_11 {
+  width: 695px;
+  height: 45px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 1);
+  font-size: 32px;
+  font-family: OPPOSans-Bold;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 32px;
+  margin-top: 38px;
+}
+
+.text_12 {
+  width: 96px;
+  height: 58px;
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 48px;
+  font-family: SJjinsongjianfan-Regular;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 48px;
+}
+
+.section_1 {
+  width: 64px;
+  height: 18px;
+  margin: 16px 0 0 443px;
+}
+
+.thumbnail_1 {
+  width: 19px;
+  height: 13px;
+  margin-top: 3px;
+}
+
+.text_13 {
+  width: 42px;
+  height: 18px;
+  overflow-wrap: break-word;
+  color: rgba(68, 68, 68, 1);
+  font-size: 14px;
+  font-family: PingFang SC-Regular;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 14px;
+}
+
+.text-wrapper_2 {
+  width: 418px;
+  height: 34px;
+  margin: 32px 0 752px 288px;
+}
+
+.text_14 {
+  width: 418px;
+  height: 34px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-family: PingFang SC-Regular;
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 24px;
+}
