@@ -1,38 +1,46 @@
 <template>
 <div class="ArticleList">
-    <ul>
-      <router-link :to="{name:'article',params:{id:article.id}}" tag="li" v-for="article in articles" :key="article.id">
+    <ul v-if="!loading">
+      <router-link :to="{name:'article',params:{id:article.id}}" tag="li" v-for="article in articles" :key="article.id" class="article-item">
+        <li>
         <span>{{article.title}}</span>
+        </li>
       </router-link>
       <RouterView></RouterView>
-    <!-- <li v-for="(article,index) in articles" :key="index">
-            {{article.title}}
-    </li> -->
+      
    </ul> 
-
+<div v-else>
+    <p>Loading...</p>
+</div>
 </div>
 </template>
 <script>
 import router from '@/router';
 import { RouterView } from 'vue-router';
+import request from '@/utils/request';
 
 export default {
     data(){
         return{
-
+          articles:[],
+          loading:true
         }
     },
-    props:{
-        articles:{
-            type:Array,
-    }
-},
-inject:["articlepage"],
+    mounted(){
+        this.getArticles();
+    },
     methods:{
-        handleClick(){
-            this.articlepage ="Articleview"
+      async getArticles(){
+        try{
+        const res = await request.get('/articles/latest');
+        this.articles = res.data;
+        }catch(err){
+          console.log(err);
+        }finally{
+          this.loading = false;
         }
-    },
+      } 
+    }
 }
 </script>
 
@@ -47,6 +55,15 @@ inject:["articlepage"],
         margin: 0 auto;
         margin-top: 10px;
     }
+.article-item{
+  cursor:pointer;
+  padding:12px;
+  border-bottom:1px solid #eee;
+  transition:background-color 0.3s ease; 
+}
+.article-item:hover{
+  background-color:#f5f5f5;
+}
 </style>
 
 <!-- <template>
