@@ -2,6 +2,7 @@
   <div class="nav-container">
    
     <img src="~@/assets/logo.png" class="logo-img">
+    <span class="logotitle">掌上福大</span>
 
     <div class="search-box">
       <input
@@ -101,10 +102,13 @@ export default {
   cursor:pointer;
 }
 
-
+.logotitle {
+  font-size: 1.5em;
+  color: #2c3e50;
+}
 
 .logo-img {
-  width:50px;
+  width:70px;
   height:50px;
   border-radius: 50%;
   margin-left:auto;

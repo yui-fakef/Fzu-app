@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@kangc/v-md-editor": "^2.3.18",
+    "apifox": "^1.0.0",
     "axios": "^1.7.9",
     "github-markdown-css": "^5.8.1",
     "highlight.js": "^11.11.1",
