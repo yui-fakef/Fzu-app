@@ -1,16 +1,18 @@
 <template>
 <NavBar />
 
-<div class="article-container">
+<div v-if="articles" class="article-container">
     <h1 class="article-title">{{ articles.title }}</h1>
     <div class="article-content">{{ articles.content }}</div>
    
 </div>
+<div v-else >加载中</div>
 </template>
 
 <script>
 import NavBar from "@/components/NavBar.vue";
-import request from "@/utils/request";
+import request from "@/api/request";
+import { getArticleDetail } from "@/api/Article";
 export default {
     data(){
         return{
@@ -29,10 +31,11 @@ export default {
         async fetchArticle(){
             try{
             const id = this.$route.params.id;
-            const res = await request.get('/articles/{articleId');
+            const res = await getArticleDetail(id)
             this.articles = res.data;
         }catch(err){
             console.log(err);
+            alert('获取文章失败，请稍后再试')
             this.$router.push('/')
         }
     }

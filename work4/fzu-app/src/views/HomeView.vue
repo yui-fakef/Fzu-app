@@ -3,6 +3,7 @@
     <main>
     <FunctionGrid />
     <ArticleList :articles="articles" />
+    <div class="Article-rank"></div>
     </main>
   </template>
   
@@ -30,7 +31,12 @@
 
 
 <style>
-
+.Article-rank{
+  display: flex;
+  color:white;
+  justify-content: center;
+  align-items: center;
+}
 </style>
 
 

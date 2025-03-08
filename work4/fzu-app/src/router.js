@@ -34,7 +34,12 @@ const router = createRouter({
           path:'/writepage',
           name:'write',
           component: WritePage
-        }
+        },
+        // {
+        //   path:'/login',
+        //   name:'login',
+        //   component: () => import('@/views/LoginPage.vue')
+        // }
       ]
   })
 

@@ -19,7 +19,10 @@
       {{ item }}
     </span>
 
-
+    <div v-if="!isLogined" class="login-section">
+    <button class="login-btn" @click="showLoginModal=true">登录/注册</button>
+    </div>
+    <LoginModel :show="showLoginModal" @close="showLoginModal=false"  @login-success="onLoginSuccess" />
   <div class="head" @mouseenter="showDropdown=true" @mouseleave="showDropdown=false">
     <img src="~@/assets/defaultAvatar.jpg" alt="头像" class="avatar">
     <div v-show="showDropdown" class="dropdown-menu">
@@ -44,7 +47,11 @@
 <script>
 
 import { ref } from 'vue';
+import LoginModel from './LoginModel.vue';
 export default {
+  components: {
+    LoginModel
+  },
   data(){
     return{
       showDropdown:false,
@@ -52,6 +59,8 @@ export default {
       '首页', '查课表', '查成绩',
       '卖舍友', '我要表白', '加入我们'
     ],
+    showLoginModal:false,
+    isLogined:false,
     }
   },
   methods: {
@@ -61,6 +70,13 @@ export default {
     },
     goToWritePage(){
       this.$router.push({name:'write'})
+    },
+    // goToLogin(){
+    //   this.$router.push({name:'login'})
+    // },
+    onLoginSuccess(){
+      this.isLogined=true;
+      this.showLoginModal=false;
     }
   }
 } 
@@ -69,6 +85,7 @@ export default {
 </script>
 
 <style>
+
 
 .section_4 {
   border-radius: 10%;

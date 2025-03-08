@@ -1,12 +1,10 @@
 <template>
 <div class="ArticleList">
     <ul v-if="!loading">
-      <router-link :to="{name:'article',params:{id:article.id}}" tag="li" v-for="article in articles" :key="article.id" class="article-item">
-        <li>
+        <li v-for="article in articles" :key="article.id" class="article-item" @click="goToDetail(article.id)">
         <span>{{article.title}}</span>
         </li>
-      </router-link>
-      <RouterView></RouterView>
+      <!-- <RouterView></RouterView> -->
       
    </ul> 
 <div v-else>
@@ -17,7 +15,7 @@
 <script>
 import router from '@/router';
 import { RouterView } from 'vue-router';
-import request from '@/utils/request';
+import { getLatestArticleList } from '@/api/Article';
 
 export default {
     data(){
@@ -32,14 +30,18 @@ export default {
     methods:{
       async getArticles(){
         try{
-        const res = await request.get('/articles/latest');
+        const res = await getLatestArticleList();
         this.articles = res.data;
         }catch(err){
           console.log(err);
+          alert('获取文章列表失败');
         }finally{
           this.loading = false;
         }
-      } 
+      },
+      goToDetail(id){
+        this.$router.push({name:'article',params:{id}});
+      }
     }
 }
 </script>

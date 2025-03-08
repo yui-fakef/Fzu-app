@@ -2,8 +2,8 @@
     <NavBar />
     <div class="home-container">
     <img src="~@/assets/defaultAvatar.jpg" class="home-img">
-    <div class="home-text">
-        <p>个人信息</p>
+    <div class="home-info">
+        <p>个人信息:</p>
     </div>
     <button @click="gotoSetpage" class="home-btn">设置</button>
     </div>
@@ -58,6 +58,12 @@ export default {
     margin-top: 20px;
     margin-left:20px;
 
+}
+.home-info{
+  position:absolute;
+  top: 20px;
+  left: 20%;
+  bottom: 80%;
 }
 .home-btn {
     width:50px;
